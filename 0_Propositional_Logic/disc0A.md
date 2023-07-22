@@ -1,4 +1,4 @@
-### 1 Truth Tables
+### 1. Truth Tables
 
 $P\bigwedge Q$ is **True** if both P and Q are **True**; $P\bigvee Q$ is **True** if one of P or Q is **True**.
 
@@ -49,7 +49,9 @@ $P\bigwedge Q$ is **True** if both P and Q are **True**; $P\bigvee Q$ is **True*
 ```
 
 
-### 2 Propositional Practice
+
+### 2. Propositional Practice
+
 (a) There is a real number which is not rational.
 
 (b) All integers are natural numbers or are negative, but not both.
@@ -58,6 +60,74 @@ $P\bigwedge Q$ is **True** if both P and Q are **True**; $P\bigvee Q$ is **True*
 
 (d) (∀x∈Z)(x∈Q)
 
-(e) (∀x∈Z)(((2|x)∨(3|x)) =⇒ (6|x))
+(e) (∀x∈Z)(((2|x)∨(3|x)) ⇒ (6|x))
 
-(f) (∀x∈N)((x>7) =⇒ ((∃a,b∈N)(a+b=x)))
+(f) (∀x∈N)((x>7) ⇒ ((∃a,b∈N)(a+b=x)))
+
+
+
+**Answer:**
+
+(a) $(\exist x \in \mathbb{R})(x \notin \mathbb{Q})$
+
+This statement is true, $\pi$, $e$, $\sqrt{2}$ , for example.
+
+(b) $(\forall x \in \mathbb{Z})(((x \in \mathbb{N})\or(x < 0)) \and \neg ((x \in \mathbb{N})\and (x < 0))$
+
+True. Natural numbers are integers which are not negative.
+
+(c) $(\forall x \in \N) ((6 \mid x) \implies ((2 \mid x) \or (3 \mid x))$
+
+True. $x = 6n = 2\times(3n) = 3\times(2n)$
+
+(d) All integers are rational numbers.
+
+True. 
+
+(e) If an integers is divisible by 2 or it is divisible by 3, it is divisible by 6.
+
+False. 4 is divisible by 2 but not divisible by 6.
+
+(f) If a natural number is larger than 7, it can be the sum of two natural numbers.
+
+True. a = x, b = 0;a = x - 1, b = 1; etc.
+
+
+
+### 3. Logical Equivalence?
+
+Decide whether each of the following logical equivalences is correct and justify your answer.
+
+(a)	$\forall x (P(x)\and Q(x)) \equiv \forall x P(x) \and \forall x Q(x)$
+
+
+
+Correct.
+
+
+
+(b)	$\forall x (P(x) \or Q(x)) \equiv \forall x P(x) \or \forall x Q(x)$
+
+
+
+Incorrect. 
+
+Counterexample: $\forall x (x>3 \or x \leq 3)$ is true but $\forall x(x >3) \or \forall x (x \leq 3)$ is false.
+
+
+
+(c)	$\exist x (P(x) \or Q(x)) \equiv \exist x P(x) \or \exist x Q(x)$
+
+
+
+Correct.
+
+
+
+(d)	$\exist x (P(x) \and Q(x)) \equiv \exist x P(x) \and \exist x Q(x)$
+
+
+
+Incorrect.
+
+Counterexample: $\exist x(x>3) \and \exist x (x\leq 3)$ is true but $\exist x ((x >3) \and (x \leq 3)$ is false.:
